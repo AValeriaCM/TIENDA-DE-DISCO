@@ -108,7 +108,7 @@ public class PanelBotones extends JPanel implements ActionListener{
                compra1.setVisible(true);
            }
            else if (BTN_CONSULTACOMPRA.equals(e.getActionCommand())){
-              PanelConsulta consulta1 = new PanelConsulta(this);
+              PanelConCompra consulta1 = new PanelConCompra(this);
               consulta1.actualizarTabla();
               consulta1.setVisible(true);
            }
