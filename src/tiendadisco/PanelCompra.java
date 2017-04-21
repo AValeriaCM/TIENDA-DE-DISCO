@@ -12,6 +12,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
@@ -25,13 +26,13 @@ import javax.swing.JTextField;
  */
 public class PanelCompra extends JDialog implements ActionListener{
     
-    JLabel LTitulo, LArtista, LDisco, LCancion, LNombreCliente, LCedula, LPrecio, JTPrecio;
+    JLabel LTitulo, LArtista, LDisco, LCancion, LNombreCliente, LCedula, LPrecio, JTPrecio1;
     JTextField JTNombreCliente, JTCedula;
     JComboBox CBArtista, CBDisco, CBCancion;
     JButton BFinalizar;
     
     private PanelBotones ventana;
-    private Disco disco11;
+    private PanelDisco disco11;
     private Cliente cliente;
     private Artista artista;
             
@@ -118,9 +119,9 @@ public class PanelCompra extends JDialog implements ActionListener{
          LPrecio.setBounds(30, 180, 100, 20);
          add(LPrecio);
          
-         JTPrecio = new JLabel(disco11.getPrecio());
-         JTPrecio.setBounds(140, 180, 100, 20);
-         add(JTPrecio);
+         JTPrecio1 = new JLabel();
+         JTPrecio1.setBounds(140, 180, 100, 20);
+         add(JTPrecio1);
          
          BFinalizar = new JButton("Finalizar Compra");
          BFinalizar.setBounds(140, 180, 200, 20);
